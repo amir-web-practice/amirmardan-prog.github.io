@@ -1,0 +1,45 @@
+body{
+  text-align: center;
+}
+
+
+:root{
+  --background-color: hsl(228, 56%, 26%);
+  --background-color_hover: hsl(235, 19%, 35%);
+}
+
+img{
+  max-width: 90%;
+}
+
+a{
+  text-decoration: none;
+  color: hsl(0, 0%, 98%);;
+}
+
+.github{
+  background-color: var(--background-color);
+  display: inline-block;
+  padding:0.5rem 1.5rem;
+  margin-right: 5px;
+  border-radius: 5px;
+
+}
+
+.email{
+  background-color:var(--background-color);
+  display: inline-block;
+  padding:0.5rem 1.5rem;
+  margin-left: 5px;
+  border-radius: 5px;
+
+
+}
+
+.github:hover{
+  background-color: var(--background-color_hover);
+}
+
+.email:hover{
+  background-color:var(--background-color_hover);
+}
