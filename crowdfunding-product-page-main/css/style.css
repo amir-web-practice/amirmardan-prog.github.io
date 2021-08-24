@@ -1,3 +1,12 @@
+:root{
+  --dark-gray:hsl(0, 0%, 30%);
+  --gray:hsl(0, 0%, 50%);
+  --light-gray:hsl(0, 0%, 90%);
+  --cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+}
+
+
 .hidden{
   display: none;
 }
@@ -6,6 +15,7 @@ body{
   font: 1rem Commissioner, sans-serif;
   outline: 1px solid red;
   margin:0;
+  background-color:  hsl(0, 0%, 100%);
 }
 
 header{
@@ -13,10 +23,16 @@ header{
   min-width: 100vw;
   height: 300px;
   background-size:cover;
-  padding-top: 1.5rem;
+  /* outline: 1px solid blue; */
+}
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu .company span{
+  /* outline: 1px solid yellow; */
   display: inline-block;
   font-weight: 700;
   color:#fff;
@@ -24,9 +40,10 @@ header{
 }
 .menu{
   /* outline: 1px solid yellow; */
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
   margin: 0 8rem;
+  padding-top: 2rem;
 }
 
 .menu ul{
@@ -44,4 +61,114 @@ header{
   margin-left: 2rem;
   color: #fff;
   cursor: pointer;
+}
+
+
+main{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.centeral-column{
+  position: relative;
+  width: 700px;
+  top: -100px;
+}
+
+.centeral-column .top{
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid hsl(0, 0%, 90%)
+}
+
+.logo{
+  position: absolute;
+  right: 50%;
+  top:-2rem;
+}
+
+.bottom-header{
+  margin-top: 2rem;
+}
+.back-to-project{
+  color:#fff;
+  font-weight: bold;
+  background-color: hsl(176,72%, 28%);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+.bookmark{
+  background-color: hsl(0, 0%, 90%);
+  color:hsl(0, 0%, 40%);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.bookmark svg{
+  position: absolute;
+  top:-2px;
+  left:-2rem;
+  cursor: pointer;
+}
+
+/*  ========== center ========== */
+.center{
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid hsl(0, 0%, 90%);
+  margin-top: 2rem;
+}
+
+.center .box-top{
+  /* outline: red 1px solid; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.center .number{
+  font-weight: 900;
+  font-size:1.9rem;
+}
+
+.center .box-bottom{
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.center .box {
+  width: 33%;
+}
+
+.center .box + .box{
+  padding-left: 3rem;;
+  border-left: 1px var(--light-gray) solid;
+}
+
+.top .bar{
+  position: relative;
+  height:10px;
+  width:100%;
+  margin-top: 1.6rem;
+  border-radius: 10px;
+  background-color:  var(--light-gray);
+}
+
+.top .bar .bar-color{
+  position: absolute;
+  top:0;
+  height:10px;
+  width:80%;
+  border-radius: 10px;
+  background-color: var(--cyan);
 }
