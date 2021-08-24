@@ -1,0 +1,47 @@
+.hidden{
+  display: none;
+}
+
+body{
+  font: 1rem Commissioner, sans-serif;
+  outline: 1px solid red;
+  margin:0;
+}
+
+header{
+  background: url("../images/image-hero-desktop.jpg") no-repeat;
+  min-width: 100vw;
+  height: 300px;
+  background-size:cover;
+  padding-top: 1.5rem;
+}
+
+.menu .company span{
+  display: inline-block;
+  font-weight: 700;
+  color:#fff;
+  font-size: 1.2rem;
+}
+.menu{
+  /* outline: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8rem;
+}
+
+.menu ul{
+  width: 50%;
+  margin: 0;
+/* outline: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+
+}
+
+.menu li{
+  margin-left: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
