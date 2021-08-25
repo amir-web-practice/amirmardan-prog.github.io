@@ -99,14 +99,18 @@ main{
   margin-top: 2rem;
 }
 
-.back-to-project{
+.green-button{
   color:#fff;
   font-weight: bold;
-  background-color: hsl(176,72%, 28%);
+  background-color: var(--cyan);
   padding: 1rem 2rem;
   border-radius: 30px;
   cursor: pointer;
 
+}
+
+.green-button:hover{
+  background-color: var(--dark-cyan);
 }
 
 .bookmark{
@@ -128,6 +132,7 @@ main{
   position: absolute;
   padding: 1rem 2rem;
   z-index: +1;
+  cursor: pointer;
 
 }
 
@@ -176,7 +181,7 @@ main{
   border-left: 1px var(--light-gray) solid;
 }
 
-.top .bar{
+.center .bar{
   position: relative;
   height:10px;
   width:100%;
@@ -185,7 +190,7 @@ main{
   background-color:  var(--light-gray);
 }
 
-.top .bar .bar-color{
+.center .bar .bar-color{
   position: absolute;
   top:0;
   height:10px;
@@ -197,7 +202,6 @@ main{
 /* =========  content =========*/
 
 .content{
-  background: #fff;
   border-radius: 10px;
   padding: 2rem;
   border: 1px solid var(--very-light-gray);
@@ -205,7 +209,46 @@ main{
 }
 
 
-.content > span{
+.content span{
   color: var(--gray);
   line-height: 1.8rem;
+}
+
+.production{
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid var(--light-gray);
+  margin-top: 2rem;
+
+}
+
+
+.production h4{
+  margin: 0;
+}
+
+.production-top{
+  margin-bottom: 2rem;
+}
+.production .price{
+  color: var(--cyan)
+}
+
+.production-bottom{
+  margin-top: 2rem;
+}
+
+.production-bottom h3 {
+  margin: 0;
+  display: inline-block;
+}
+
+.production > span{
+  color: var(--gray);
+  line-height: 1.8rem;
+}
+
+.production-bottom .select-reward {
+  /* margin-top: 2rem; */
 }

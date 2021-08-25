@@ -3,6 +3,7 @@ let darkCyan = "hsl(176, 72%, 28%)";
 let gray = "hsl(0, 0%, 50%)"
 let lightGray = "hsl(0, 0%, 90%)"
 
+zeroProductionLeft()
 
 document.querySelector(".bookmark label").addEventListener("mouseup", function(){
   if (document.querySelector(".bookmark .bookmark-check").checked===true){
@@ -20,3 +21,16 @@ document.querySelector(".bookmark label").addEventListener("mouseup", function()
 
   }
 })
+
+
+function zeroProductionLeft(){
+  let products = document.querySelectorAll(".production")
+
+  for (let i=0; i<products.length; i++){
+    if (document.querySelectorAll(".production .left-box-production h3")[i].innerHTML==0){
+      products[i].style.opacity = "50%"
+      document.querySelectorAll(".production .select-reward")[i].style.backgroundColor = gray
+    }
+  }
+
+}
