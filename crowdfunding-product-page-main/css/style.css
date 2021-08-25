@@ -193,3 +193,19 @@ main{
   border-radius: 10px;
   background-color: var(--cyan);
 }
+
+/* =========  content =========*/
+
+.content{
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  border: 1px solid var(--very-light-gray);
+  margin-top: 2rem;
+}
+
+
+.content > span{
+  color: var(--gray);
+  line-height: 1.8rem;
+}
