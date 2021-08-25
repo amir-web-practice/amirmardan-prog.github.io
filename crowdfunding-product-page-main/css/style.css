@@ -1,7 +1,8 @@
 :root{
   --dark-gray:hsl(0, 0%, 30%);
   --gray:hsl(0, 0%, 50%);
-  --light-gray:hsl(0, 0%, 95%);
+  --light-gray:hsl(0, 0%, 90%);
+  --very-light-gray:hsl(0, 0%, 95%);
   --cyan: hsl(176, 50%, 47%);
   --dark-cyan: hsl(176, 72%, 28%);
 }
@@ -82,7 +83,7 @@ main{
   background: #fff;
   border-radius: 10px;
   padding: 2rem;
-  border: 1px solid hsl(0, 0%, 90%)
+  border: 1px solid var(--very-light-gray)
 }
 
 .logo{
@@ -109,13 +110,25 @@ main{
 }
 
 .bookmark{
-  background-color: hsl(0, 0%, 90%);
-  color:hsl(0, 0%, 40%);
+  background-color: var(--light-gray);
+  color:var(--gray);
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 0 30px 30px 0;
   cursor: pointer;
   position: relative;
+  width: 5rem;
+}
+
+
+.bookmark label{
+  top:0;
+  right:0%;
+  width: 70%;
+  position: absolute;
+  padding: 1rem 2rem;
+  z-index: +1;
+
 }
 
 .bookmark svg{
@@ -125,12 +138,16 @@ main{
   cursor: pointer;
 }
 
+.bookmark input{
+  visibility: hidden;
+}
+
 /*  ========== center ========== */
 .center{
   background: #fff;
   border-radius: 10px;
   padding: 2rem;
-  border: 1px solid hsl(0, 0%, 90%);
+  border: 1px solid var(--very-light-gray);
   margin-top: 2rem;
 }
 
