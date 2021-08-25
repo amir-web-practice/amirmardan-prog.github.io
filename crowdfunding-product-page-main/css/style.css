@@ -1,7 +1,7 @@
 :root{
   --dark-gray:hsl(0, 0%, 30%);
   --gray:hsl(0, 0%, 50%);
-  --light-gray:hsl(0, 0%, 90%);
+  --light-gray:hsl(0, 0%, 95%);
   --cyan: hsl(176, 50%, 47%);
   --dark-cyan: hsl(176, 72%, 28%);
 }
@@ -71,13 +71,13 @@ main{
 
 }
 
-.centeral-column{
+.central-column{
   position: relative;
   width: 700px;
   top: -100px;
 }
-
-.centeral-column .top{
+/*  ========= Top central part ======= */
+.central-column .top{
   position: relative;
   background: #fff;
   border-radius: 10px;
@@ -91,9 +91,13 @@ main{
   top:-2rem;
 }
 
+.central-column .bio{
+  color: var(--gray);
+}
 .bottom-header{
   margin-top: 2rem;
 }
+
 .back-to-project{
   color:#fff;
   font-weight: bold;
