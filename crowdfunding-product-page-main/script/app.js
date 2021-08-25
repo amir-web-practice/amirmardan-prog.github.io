@@ -39,10 +39,10 @@ function zeroProductionLeft(){
 document.querySelector(".menu-logo").addEventListener('click', function(){
   if (document.querySelector(".menu .menu-mobile").style.visibility=== "hidden"){
     document.querySelector(".menu .menu-mobile").style.visibility= "visible"
-    document.querySelector(".menu .menu-logo").style.backgroundImage = "url('images/icon-close-menu.svg')";
+    document.querySelector(".menu .menu-logo").style.backgroundImage = "url('../images/icon-close-menu.svg')";
   }else{
     document.querySelector(".menu .menu-mobile").style.visibility= "hidden"
-    document.querySelector(".menu .menu-logo").style.backgroundImage = "url('./images/icon-hamburger.svg')";
+    document.querySelector(".menu .menu-logo").style.backgroundImage = "url('../images/icon-hamburger.svg')";
 
   }
 
