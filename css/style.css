@@ -236,15 +236,15 @@ body {
     margin: 0;
   }
 
-  .main-avatar {
+  /* .main-avatar {
     width: 119px;
     height: 123px;
-  }
+  } */
 
-  .horizontal-bar .avatar {
+  /* .horizontal-bar .avatar {
     width: 89px;
     height: 92px;
-  }
+  } */
 }
 
 @media (max-width:430px){
