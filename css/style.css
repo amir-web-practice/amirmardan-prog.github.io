@@ -10,6 +10,12 @@ body {
   margin: 0;
 }
 
+a{
+  text-decoration: none;
+  color:#fff;
+  margin: 0
+}
+
 .menu-bar {
   display: flex;
   justify-content: space-between;
@@ -183,13 +189,86 @@ body {
 }
 
 
-/* =========== portfolio ============== */
+/* =========== p3 ============== */
 
 .hidden{
-  display: none;
+  /* display: none; */
+}
+
+.why-text-part{
+  position: relative;
+  color:#fff;
+  width: 30%;
+  display: flex;
+  line-height: 1.4rem;
+  margin: 3rem 5rem 2rem 10rem;
+
 }
 
 
+.horizontal-bar-p3{
+  flex-direction: row;
+  padding-bottom: 1rem;
+  z-index: 0;
+}
+
+
+.why-text-part .avatar{
+  margin-right: 2rem;
+}
+
+form input{
+  border: 0;
+  border-radius: 14px 14px 0 0 ;
+  height: 2rem;
+  background-color: var(--cyan);
+  color: var(--dark-blue);
+  outline: 0;
+  font-size: 1.0rem;
+
+}
+
+form input+input{
+  border-top: 1px solid var(--dark-blue);
+  /* display: inline-block; */
+  margin-bottom: 1rem;
+  border-radius: 0 0 14px 14px;
+
+  /* font-size: 1.3rem; */
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 5rem 2rem 10rem;
+  /* z-index: +1; */
+
+}
+
+.contact-form .btn_email{
+  height: 2rem;
+  border-radius: 14px;
+  margin-top: 1rem;
+  background-color: var(--cyan);
+  border: 0;
+  padding-top: 0.5rem;
+  color: var(--dark-blue);
+  /* font-family: "Big Shoulders Display" ; */
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+textarea{
+  /* z-index: +10; */
+  background-color: var(--cyan);
+  font-size: 1.1rem;
+  border: 0;
+  outline: 0;
+
+
+
+}
 
 
 
@@ -236,16 +315,6 @@ body {
     margin: 0;
   }
 
-  /* .main-avatar {
-    width: 119px;
-    height: 123px;
-  } */
-
-  /* .horizontal-bar .avatar {
-    width: 89px;
-    height: 92px;
-  } */
-}
 
 @media (max-width:430px){
 

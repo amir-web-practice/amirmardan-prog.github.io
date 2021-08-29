@@ -6,7 +6,7 @@ let y = 0;
 window.addEventListener("resize", ()=>{
   location.reload();
 
-  console.log("resize")
+  // console.log("resize")
 })
 
 window.addEventListener("mousemove", function(event){
@@ -18,9 +18,9 @@ for (let i=0;i<avatars.length;i++){
 
     document.querySelectorAll(".avatars")[i].setAttribute('src', "images/avatar-smile.svg")
 
-    console.log("x:" + x)
+    // console.log("x:" + x)
     // console.log("x2:" + x2)
-    console.log("y:" + y)
+    // console.log("y:" + y)
   }else if(x<50 & y<50){
     document.querySelectorAll(".avatars")[i].setAttribute('src', "images/avatar-sad.svg")
   }else{
@@ -111,3 +111,23 @@ $(".menu-icon").click(()=>{
   }
 
 })
+
+// ============== qlicking on get in touch ============
+$(".touch-menu").click(()=>{
+
+})
+
+// =============== contact us ==================
+
+// $(document).ready(()=>{
+  $(".btn_email").click(()=>{
+    let name = $(".contact-form input").val()
+    // let email = document.querySelectorAll(".contact-form input")[1].value
+    let msg = encodeURIComponent($("textarea").val())
+    let email = "amirmardan.prog@gmail.com"
+
+    let subject= encodeURIComponent("web")
+    // console.log(name)
+    $(".btn_email").attr('href','mailto:amirmardan.prog@gmail.com?subject=web&body=' + msg)
+  })
+// })

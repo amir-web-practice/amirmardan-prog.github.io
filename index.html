@@ -22,7 +22,10 @@
 
 
     <div class="menu menu-touch">
-      <span>Get in touch</span>
+      <!-- <a href="p3" class='touch-menu'>Get in touch</a> -->
+      <span >
+        <a href="#p3" class='touch-menu'>Get in touch</a>
+      </span>
     </div>
     <span class=menu-icon>
       <!-- <img class=menu-icon src="./images/burger.png" alt="burger"> -->
@@ -32,7 +35,7 @@
   <div class="page1 page">
     <div class="menu-mobile">
       <span class='menu-fspan'>Portfolio </span>
-      <span>Get in touch</span>
+      <span class='touch-menu'>Get in touch</span>
     </div>
     <div class="central-container-p1">
       <img src="images/avatar.svg" alt="avatar" class="main-avatar avatars">
@@ -98,60 +101,25 @@
       </div>
     </div>
   </div>
-  <div class="page3 page hidden">
-    <div class="horizontal-bar">
+  <div class="page3 page hidden" id="p3">
+    <div class="horizontal-bar horizontal-bar-p3">
+      <div class="why-text-part">
       <img src="images/avatar.svg" alt="avatar" class="avatar avatars">
-      <div class="hi">
-        <h2>Hi, I’m Amir! </h2>
-        I design and code to make your website look perfect and work flawlessly
+      <div class="whyMe">
+        <h2>Service </h2>
+        Simple answers for complicated problems. I can design logo, brand, website
+        and whatever else you might need for your business. I give your designs
+        life on the internet.
+      </div>
 
-      </div>
     </div>
-    <div class="central-container-p2">
-      <div class="table">
-        <div class="subtable subtable1">
-          <div class="subtable-header">
-            <img src="./images/designing.svg" alt="designing">
-            <h4>Designer</h4>
-          </div>
-          <div class="subtable-bottom">
-            <div class="subtable-text">
-              Design should be efficient
-              while it is simple, that is what
-              I do.
-            </div>
-            <h4>I design</h4>
-            <ul class="design-list">
-              <li>Web</li>
-              <li>UI/UX</li>
-              <li>Mobile app</li>
-              <li>Logo</li>
-            </ul>
-          </div>
-        </div>
-        <div class="subtable subtable1">
-          <div class="subtable-header">
-            <img src="./images/programming.svg" alt="programming">
-            <h4>Developer</h4>
-          </div>
-          <div class="subtable-bottom">
-            <div class="subtable-text">
-              I enjoy seeing a design gets a life
-              on the internet and a website
-              operates perfectley.
-            </div>
-            <h4>I know</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>JQuery</li>
-              <li>Node</li>
-              <li>Express</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <form class="contact-form" >
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="name" placeholder="Your Email">
+      <textarea name="name" rows="8" cols="50" placeholder="Your message ..."></textarea>
+      <a class="btn_email">Send</a>
+      <!-- href='mailto:amirmardan.prog@gmail.com?subject=web&body=' + msg -->
+    </form>
     </div>
   </div>
 
