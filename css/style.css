@@ -61,9 +61,6 @@ a{
 
   background-color: var(--dark-blue);
   font-family: 'Space Mono', monospace;
-  /* position: fixed; */
-  /* right: 2%; */
-
   cursor: pointer;
   z-index: +1;
 }
@@ -109,7 +106,6 @@ a{
   align-items: center;
   z-index: -1;
   padding-bottom: 7rem;
-  /* position: absolute; */
   outline: 1px blue solid;
 
 }
@@ -191,10 +187,6 @@ a{
 
 /* =========== p3 ============== */
 
-.hidden{
-  /* display: none; */
-}
-
 .why-text-part{
   position: relative;
   color:#fff;
@@ -230,18 +222,15 @@ form input{
 
 form input+input{
   border-top: 1px solid var(--dark-blue);
-  /* display: inline-block; */
   margin-bottom: 1rem;
   border-radius: 0 0 14px 14px;
 
-  /* font-size: 1.3rem; */
 }
 
 .contact-form{
   display: flex;
   flex-direction: column;
   margin: 4rem 5rem 2rem 10rem;
-  /* z-index: +1; */
 
 }
 
@@ -253,14 +242,12 @@ form input+input{
   border: 0;
   padding-top: 0.5rem;
   color: var(--dark-blue);
-  /* font-family: "Big Shoulders Display" ; */
   font-size: 1.3rem;
   text-align: center;
   cursor: pointer;
 }
 
 textarea{
-  /* z-index: +10; */
   background-color: var(--cyan);
   font-size: 1.1rem;
   border: 0;
