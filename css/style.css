@@ -81,6 +81,29 @@ a{
   align-items: center;
 }
 
+.avatar-msg{
+  position: relative;
+}
+
+.cloud-msg{
+  display: inline-block;
+  width: 150px;
+  height: 0px;
+  background: url("../images/messageBox.svg") no-repeat;
+  position: absolute;
+  right: 70%;
+  bottom:50%;
+  text-align: center;
+  transition: height 1s ease-out;
+  z-index: +1;
+}
+
+
+.avatar-msg .msg{
+  margin: 10px;
+  display: none
+}
+
 .central-container-p1  span{
   text-align: center;
   line-height: 1.4rem;
@@ -106,7 +129,6 @@ a{
   align-items: center;
   z-index: -1;
   padding-bottom: 7rem;
-  outline: 1px blue solid;
 
 }
 
@@ -188,20 +210,30 @@ a{
 /* =========== p3 ============== */
 
 .why-text-part{
-  position: relative;
+
   color:#fff;
-  width: 30%;
+  width: 50%;
   display: flex;
   line-height: 1.4rem;
-  margin: 3rem 5rem 2rem 10rem;
-
+  margin: 3rem 5rem 2rem 5rem;
 }
 
+.text-form{
+  position: relative;
+  display: flex;
+  max-width: 100vw;
+
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
 .horizontal-bar-p3{
   flex-direction: row;
   padding-bottom: 1rem;
   z-index: 0;
+  /* height: 400px; */
 }
 
 
@@ -228,9 +260,12 @@ form input+input{
 }
 
 .contact-form{
+  /* position: absolute;
+  left: 70%; */
+width: 40%;
   display: flex;
   flex-direction: column;
-  margin: 4rem 5rem 2rem 10rem;
+  margin: 0rem 5rem;
 
 }
 
@@ -252,9 +287,7 @@ textarea{
   font-size: 1.1rem;
   border: 0;
   outline: 0;
-
-
-
+  width:100%;
 }
 
 
@@ -264,6 +297,15 @@ textarea{
 @media (max-width:930px){
   .menu-bar  {
     position: relative;
+  }
+  .why-text-part{
+
+    color:#fff;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4rem;
+    margin: 3rem 3rem 2rem;
   }
 
 
@@ -294,6 +336,29 @@ textarea{
   .subtable-header{
     border-radius: 12px 12px 0 0;
   }
+
+  .why-text-part{
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+    width: 80%;
+
+
+  }
+
+  .contact-form{
+    margin: 0;
+    position: relative;
+    width: 80%;
+
+  }
+
+    .text-form{
+      flex-direction: column;
+      margin: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
 }
 
 @media (max-width:500px){
@@ -351,4 +416,6 @@ textarea{
     border-top: 1px solid var(--cyan)
 
   }
+
+
 }

@@ -17,13 +17,13 @@
   <div class="menu-bar">
     <img src="images/logo_transparent.png" alt="logo">
     <div class="menu menu-portfolio">
-      <span>Portfolio </span>
+      <span class=portfolio-menu>Portfolio </span>
     </div>
 
 
     <div class="menu menu-touch">
       <!-- <a href="p3" class='touch-menu'>Get in touch</a> -->
-      <span >
+      <span>
         <a href="#p3" class='touch-menu'>Get in touch</a>
       </span>
     </div>
@@ -38,7 +38,15 @@
       <span class='touch-menu'>Get in touch</span>
     </div>
     <div class="central-container-p1">
-      <img src="images/avatar.svg" alt="avatar" class="main-avatar avatars">
+      <div id="cloud-msg-id" class="avatar-msg">
+        <span class='cloud-msg'>
+          <br>
+          <span class="msg">I'm working on it!</span>
+        </span>
+        <div class="avatar-box">
+          <img src="images/avatar.svg" alt="avatar" class="main-avatar avatars">
+        </div>
+      </div>
       <h1>Designer and front-end developer</h1>
       <span>
         I design and code to make your website looks perfect and work flawlessly
@@ -101,25 +109,27 @@
       </div>
     </div>
   </div>
-  <div class="page3 page hidden" id="p3">
+  <div class="page3 page" id="p3">
     <div class="horizontal-bar horizontal-bar-p3">
+      <div class="text-form">
       <div class="why-text-part">
-      <img src="images/avatar.svg" alt="avatar" class="avatar avatars">
-      <div class="whyMe">
-        <h2>Service </h2>
-        Simple answers for complicated problems. I can design logo, brand, website
-        and whatever else you might need for your business. I give your designs
-        life on the internet.
-      </div>
+        <img src="images/avatar.svg" alt="avatar" class="avatar avatars">
+        <div class="whyMe">
+          <h2>Service </h2>
+          Simple answers for complicated problems. I can design logo, brand, website
+          and whatever else you might need for your business. I give your designs
+          life on the internet.
+        </div>
 
-    </div>
-    <form class="contact-form" >
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="name" placeholder="Your Email">
-      <textarea name="name" rows="8" cols="50" placeholder="Your message ..."></textarea>
-      <a class="btn_email">Send</a>
-      <!-- href='mailto:amirmardan.prog@gmail.com?subject=web&body=' + msg -->
-    </form>
+      </div>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="name" placeholder="Your Email">
+        <textarea name="name" rows="8" placeholder="Your message ..."></textarea>
+        <a class="btn_email">Send</a>
+        <!-- href='mailto:amirmardan.prog@gmail.com?subject=web&body=' + msg -->
+      </form>
+      </div>
     </div>
   </div>
 

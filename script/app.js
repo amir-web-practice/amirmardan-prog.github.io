@@ -113,9 +113,9 @@ $(".menu-icon").click(()=>{
 })
 
 // ============== qlicking on get in touch ============
-$(".touch-menu").click(()=>{
-
-})
+// $(".touch-menu").click(()=>{
+//
+// })
 
 // =============== contact us ==================
 
@@ -130,4 +130,26 @@ $(".touch-menu").click(()=>{
     // console.log(name)
     $(".btn_email").attr('href','mailto:amirmardan.prog@gmail.com?subject=web&body=' + msg)
   })
-// })
+
+
+// ============== cloud message ================
+$(".portfolio-menu").click(()=>{
+
+let classList = document.getElementById("cloud-msg-id").classList
+
+  if (  $(".avatar-msg .msg").css("display") === "inline-block"){
+    $(".cloud-msg").css("height", "0")
+
+    $(".avatar-msg .msg").css("display", "none")
+
+  }else{
+    $(".cloud-msg").css("height", "150px")
+    $(".avatar-msg .msg").css("display","inline-block")
+  }
+
+})
+
+// ============ menu-mobile ===========
+$(".touch-menu").click(()=>{
+  window.location = "#p3"
+})
